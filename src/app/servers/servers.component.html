@@ -1,0 +1,16 @@
+<div>
+    <h1>Server list</h1>
+    <hr>
+    <app-server></app-server>
+    <app-server></app-server>
+    <app-server></app-server>
+    <hr>
+
+    <h1>Add a new server</h1>
+    <input [(ngModel)]="serverName" type="text" class="form-control" >
+    <p>Aqui esta el valor del input  {{ serverName }}</p>
+    
+    <button [disabled]="allowNewServer" (click)="onCreateServer()">Add</button>
+    <p>{{allowNewServer}}</p>    
+    <hr>
+</div>
